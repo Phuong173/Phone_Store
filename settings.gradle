@@ -1,0 +1,2 @@
+rootProject.name = "App_phone_store_manager_Nhom_3"
+include ':app'

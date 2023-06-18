@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_seach"
+    tools:context=".ui.SanPham.ChiTietSanPhamFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgSanPhamDeltail"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/image_defaut" />
+
+        <LinearLayout
+            android:id="@+id/lnlTenSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgSanPhamDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleTenSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_name"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvTenSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlHangSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlTenSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleHangSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/hang"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvHangSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlLoaiSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlHangSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleLoaiSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_class"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvLoaiSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlTTSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlLoaiSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleTinhTrangSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_status"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvTinhTrangSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingBottom="@dimen/padding_defaut"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlGiaTienSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlTTSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleGiaTienSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_money"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvGiaTienSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlTrangThaiSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlGiaTienSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleTrangThaiSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/status"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvTrangThaiSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitleCTSP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.5"
+            android:text="@string/sp_deital"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlTrangThaiSPDeltail" />
+        <LinearLayout
+            android:id="@+id/lnlBoNhoSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleCTSP">
+
+            <TextView
+                android:id="@+id/tvTitleBoNhoSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_bonho"
+                android:layout_marginBottom="@dimen/padding_defaut"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvBoNhoSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlRAMSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlBoNhoSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleRAMSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_ram"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvRAMSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlChipSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlRAMSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleChipSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_chip"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvChipSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlOSSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlChipSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleOSSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_os"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvOSSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlManHinhSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlOSSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleManHinhSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_display"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvManHinhSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlBatterySPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlManHinhSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleBatterySP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_battery"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvBatterySPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlCongSacSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlBatterySPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleCongSacSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_type"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvCongSacSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlLoaiPKSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlCongSacSPDeltail">
+
+            <TextView
+                android:id="@+id/tvTitleLoaiPKSP"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_loaiPK"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvLoaiPKSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitleMT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="0.5"
+            android:text="@string/sp_note"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlLoaiPKSPDeltail" />
+
+        <LinearLayout
+            android:id="@+id/lnlMoTaSPDeltail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleMT">
+
+            <TextView
+                android:id="@+id/tvMotaSPDeltail"
+                style="@style/custom_TV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/padding_defaut"
+                android:layout_marginRight="@dimen/padding_defaut"
+                android:textSize="@dimen/text_medium" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

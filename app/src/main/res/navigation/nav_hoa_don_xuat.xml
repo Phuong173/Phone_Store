@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_hoa_don_xuat"
+    app:startDestination="@id/nav_listHDX">
+
+    <fragment
+        android:id="@+id/nav_listHDX"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonXuat.ListHoaDonXuatFragment"
+        android:label="fragment_list_hoa_don_xuat"
+        tools:layout="@layout/fragment_list_hoa_don_xuat" >
+        <action
+            android:id="@+id/listHDX_to_addHDX"
+            app:destination="@id/nav_addHDX" />
+        <action
+            android:id="@+id/listHDX_to_chiTietHDX"
+            app:destination="@id/nav_chiTietHDX" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addHDX"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonXuat.AddHoaDonXuatFragment"
+        android:label="fragment_add_hoa_don_xuat"
+        tools:layout="@layout/fragment_add_hoa_don_xuat" >
+        <action
+            android:id="@+id/addHDX_to_listHDX"
+            app:destination="@id/nav_listHDX"
+            app:popUpTo="@id/nav_hoa_don_xuat" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editHDX"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonXuat.EditHoaDonXuatragment"
+        android:label="fragment_edit_hoa_don_xuat"
+        tools:layout="@layout/fragment_edit_hoa_don_xuat" >
+        <action
+            android:id="@+id/editHDX_to_chiTietHDX"
+            app:destination="@id/nav_chiTietHDX"
+            app:popUpTo="@id/nav_chiTietHDX" />
+        <action
+            android:id="@+id/editHDX_to_listHDX"
+            app:destination="@id/nav_listHDX"
+            app:popUpTo="@id/nav_hoa_don_xuat" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chiTietHDX"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonXuat.ChiTietHoaDonXuatFragment"
+        android:label="fragment_chi_tiet_hoa_don_xuat"
+        tools:layout="@layout/fragment_chi_tiet_hoa_don_xuat" >
+        <action
+            android:id="@+id/chiTietHDX_to_editHDX"
+            app:destination="@id/nav_editHDX" />
+        <action
+            android:id="@+id/chiTietHDX_to_listHDX"
+            app:destination="@id/nav_listHDX"
+            app:popUpTo="@id/nav_hoa_don_xuat" />
+    </fragment>
+</navigation>

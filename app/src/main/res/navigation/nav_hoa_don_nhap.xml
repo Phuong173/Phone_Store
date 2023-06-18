@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_hoa_don_nhap"
+    app:startDestination="@id/nav_listHDNhap">
+
+    <fragment
+        android:id="@+id/nav_listHDNhap"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonNhap.ListHoaDonNhapFragment"
+        android:label="fragment_list_hoa_don_nhap"
+        tools:layout="@layout/fragment_list_hoa_don_nhap" >
+        <action
+            android:id="@+id/listHDNhap_to_addHDNhap"
+            app:destination="@id/nav_addHDNhap" />
+        <action
+            android:id="@+id/listHDNhap_to_ChiTietHDNhap"
+            app:destination="@id/nav_CtHDNhap" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addHDNhap"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonNhap.AddHoaDonNhapFragment"
+        android:label="fragment_add_hoa_don_nhap"
+        tools:layout="@layout/fragment_add_hoa_don_nhap" >
+        <action
+            android:id="@+id/addHDNhap_to_listHDNhap"
+            app:destination="@id/nav_listHDNhap"
+            app:popUpTo="@id/nav_hoa_don_nhap"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_CtHDNhap"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonNhap.ChiTietHoaDonNhapFragment"
+        android:label="fragment_chi_tiet_hoa_don_nhap"
+        tools:layout="@layout/fragment_chi_tiet_hoa_don_nhap" >
+        <action
+            android:id="@+id/ChiTietHDNhap_to_editHDNhap"
+            app:destination="@id/nav_editHDNhap" />
+        <action
+            android:id="@+id/ChiTietHDNhap_to_listHDNhap"
+            app:destination="@id/nav_listHDNhap"
+            app:popUpTo="@id/nav_hoa_don_nhap"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editHDNhap"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.HoaDonNhap.EditHoaDonNhapFragment"
+        android:label="fragment_edit_hoa_don_nhap"
+        tools:layout="@layout/fragment_edit_hoa_don_nhap" >
+        <action
+            android:id="@+id/editHDNhap_to_listHDNhap"
+            app:destination="@id/nav_listHDNhap" />
+        <action
+            android:id="@+id/editHDNhap_to_ChiTietHDNhap"
+            app:destination="@id/nav_CtHDNhap"
+            app:popUpTo="@id/nav_CtHDNhap" />
+    </fragment>
+
+</navigation>

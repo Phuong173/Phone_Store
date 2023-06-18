@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_seach"
+    tools:context=".ui.KhachHang.ChiTietKhachHangFragment">
+
+    <TextView
+        android:id="@+id/tv_kh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tile_edit_kH"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/lnlTenSP"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kh">
+
+        <TextView
+            style="@style/custom_TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding_defaut"
+            android:text="@string/tile_HotenKH"
+            android:textSize="@dimen/text_little" />
+
+        <TextView
+            android:id="@+id/tvHoTenKHShow"
+            style="@style/custom_TV_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/text_little" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnlNhap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnlTenSP">
+
+        <TextView
+            style="@style/custom_TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding_defaut"
+            android:text="@string/tile_sdtKH"
+            android:textSize="@dimen/text_little" />
+
+        <TextView
+            android:id="@+id/tvSoDienThoaiKHShow"
+            style="@style/custom_TV_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/text_little" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+
+        android:layout_marginTop="2dp"
+
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lnlNhap">
+
+        <TextView
+            style="@style/custom_TV"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding_defaut"
+            android:text="@string/tile_diachiKH"
+            android:textSize="@dimen/text_little" />
+
+        <TextView
+            android:id="@+id/tvDiaChiKHShow"
+            style="@style/custom_TV_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:textSize="@dimen/text_little" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

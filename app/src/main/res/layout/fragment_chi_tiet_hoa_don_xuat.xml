@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_seach"
+    tools:context=".ui.HoaDonXuat.ChiTietHoaDonXuatFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/khach_hang"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/hd_title"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlKHXuat"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/lnlKHXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/khach_hang"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvKHXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlNgayTaoXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/date_note"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvNgayTaoXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlNvBanXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlNgayTaoXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/nv_ban"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvNvBanXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlNguoiTaoXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlNvBanXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/nv_note"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvNguoiTaoXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlTrangThaiXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlNguoiTaoXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/status"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvTrangThaiXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCTHDN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/hd_deital"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlTrangThaiXuat"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:id="@+id/lnlTenSpXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCTHDN">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sp_name"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvTenSpXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlSlXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlTenSpXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/soluong"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvSlXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlDonGiaXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlSlXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/don_gia"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvDonGiaXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlBaoHanhXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlDonGiaXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/proted"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvBaoHanhXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlGiamGiaXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="2dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlBaoHanhXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/sale"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvGiamGiaXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnlThanhTienXuat"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/lnlGiamGiaXuat">
+
+            <TextView
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_defaut"
+                android:text="@string/money"
+                android:textSize="@dimen/text_little" />
+
+            <TextView
+                android:id="@+id/tvThanhTienXuat"
+                style="@style/custom_TV"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/text_little" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

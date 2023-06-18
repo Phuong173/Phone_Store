@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Phone Store Manager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Trang chủ</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="doanh_thu">Doanh thu</string>
+    <string name="home">Trang chủ</string>
+    <string name="menu_hd_xuat">Hóa đơn Xuất</string>
+    <string name="menu_hd_nhap">Hóa đơn Nhập</string>
+    <string name="san_pham">Sản phẩm</string>
+    <string name="app_title">Manager</string>
+    <string name="app_title_sub">Phone Store</string>
+    <string name="hang">Hãng</string>
+    <string name="khach_hang">Khách hàng</string>
+    <string name="menu_top">Top 10 sản phẩm bán chạy</string>
+    <string name="menu_acc">Quản lý Tài khoản</string>
+    <string name="menu_about_acc">Thông tin tài khoản</string>
+    <string name="menu_logout">Đăng xuất</string>
+    <string name="user">Tên đăng nhập</string>
+    <string name="pass">Mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="remember">Lưu tài khoản</string>
+    <string name="cancel">Hủy</string>
+    <string name="exit">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="edit">Sửa</string>
+    <string name="khachhang_title">Mã Khách Hàng</string>
+    <string name="tile_HotenKH">Họ Tên</string>
+    <string name="tile_sdtKH">Số điện thoại</string>
+    <string name="tile_diachiKH">Địa chỉ</string>
+    <string name="tile_edit_kH">Khách Hàng </string>
+    <string name="title_add_hang">Thêm hãng</string>
+    <string name="ma_hang">Mã hãng</string>
+    <string name="name_hang">Tên hãng</string>
+    <string name="name_hang_show">Tên hãng:</string>
+    <string name="seach">Tìm kiếm</string>
+    <string name="loc">Lọc</string>
+    <string name="user_tk">Tài khoản</string>
+    <string name="nv_id">Mã nhân viên</string>
+    <string name="name">Họ tên</string>
+    <string name="phone">Điện thoại</string>
+    <string name="date_year">Năm sinh</string>
+    <string name="dia_chi">Điạ chỉ</string>
+    <string name="pass_forget">Quên mật khẩu</string>
+    <string name="pass_change">Đổi mật khẩu</string>
+    <string name="pass_defaut">Mật khẩu mặc định là: 123456</string>
+    <string name="reset_pass">Đặt lại mật khẩu mặc định cho tài khoản</string>
+    <string name="text_thongtin">Chỉnh sửa cá nhân</string>
+    <string name="pass_old">Mật khẩu cũ</string>
+    <string name="pass_re_change">Nhập lại mật khẩu</string>
+    <string name="sp_name">Tên sản phẩm</string>
+    <string name="sp_id">Mã sản phẩm</string>
+    <string name="sp_class">Loại sản phẩm</string>
+    <string name="sp_phone">Điện thoại</string>
+    <string name="sp_phukien">Phụ kiện</string>
+    <string name="sp_status">Tình trạng</string>
+    <string name="status">Trạng thái</string>
+    <string name="status_s">Trạng thái:</string>
+    <string name="sp_money">Giá tiền</string>
+    <string name="sp_bonho">Bộ nhớ</string>
+    <string name="sp_ram">RAM</string>
+    <string name="sp_deital">Chi tiết sản phẩm</string>
+    <string name="sp_chip">ChipSet</string>
+    <string name="sp_os">Hệ điều hành</string>
+    <string name="sp_display">Màn hình</string>
+    <string name="sp_battery">Dung lượng pin</string>
+    <string name="sp_type">Cổng sạc</string>
+    <string name="sp_loaiPK">Loại phụ kiện</string>
+    <string name="sp_note">Mô tả</string>
+    <string name="hd_id">Mã hóa đơn</string>
+    <string name="date">Ngày</string>
+    <string name="soluong">Số lượng</string>
+    <string name="nhan_vien">Nhân viên</string>
+    <string name="date_note">Ngày tạo</string>
+    <string name="nv_note">Người tạo</string>
+    <string name="hd_deital">Chi tiết hóa đơn</string>
+    <string name="sp_tinhtrang">Tình trạng sản phẩm</string>
+    <string name="money">Thành tiền</string>
+    <string name="money_show">Thành tiền:</string>
+    <string name="proted">Bảo hành</string>
+    <string name="proted_no">Không bảo hành</string>
+    <string name="proted_tittle">6 tháng</string>
+    <string name="proted_big">12 tháng</string>
+    <string name="don_gia">Đơn giá</string>
+    <string name="don_gia_show">Đơn giá:</string>
+    <string name="hd_title">Hóa đơn</string>
+    <string name="sale">Khuyến mãi</string>
+    <string name="sale_show">Khuyến mãi:</string>
+    <string name="nv_ban">Nhân viên bán</string>
+    <string name="chup_anh">Chụp ảnh</string>
+    <string name="chon_file">Tải ảnh lên</string>
+    <string name="sl_nhap">Số lượng Nhập:</string>
+    <string name="sl_xuat">Số lượng Xuất:</string>
+    <string name="phan_loai">Phân loại</string>
+    <string name="tog_quan">Tổng quan</string>
+    <string name="sl_ton">Tồn kho:</string>
+    <string name="sp_moneys">Giá tiền:</string>
+    <string name="xuat">Tổng tiền xuất hàng</string>
+    <string name="xem">Xem</string>
+    <string name="nhap">Tổng tiền nhập hàng</string>
+    <string name="done">Chọn</string>
+    <string name="done_class">Chọn hãng</string>
+    <string name="chuaLK">Chưa lưu kho</string>
+    <string name="daLK">Đã lưu kho</string>
+
+    <string-array name="filter">
+        <item>Mặc định</item>
+        <item>A-Z theo Tên</item>
+        <item>A-Z theo Mã</item>
+    </string-array>
+
+    <string-array name="filterNV">
+        <item>Mặc định</item>
+        <item>A-Z theo Tên</item>
+        <item>A-Z theo Mã</item>
+        <item>A-Z theo TK</item>
+    </string-array>
+
+    <string-array name="date">
+        <item>Tất cả</item>
+        <item>Hôm nay</item>
+        <item>7 ngày</item>
+        <item>30 ngày</item>
+    </string-array>
+
+    <string-array name="tinhTrang">
+        <item>Đang xử lý</item>
+        <item>Đã được xử lý</item>
+        <item>Vận chuyển</item>
+        <item>Hoàn thành</item>
+    </string-array>
+    <string-array name="khuyenMai">
+        <item>Không khuyến mãi</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+    </string-array>
+</resources>

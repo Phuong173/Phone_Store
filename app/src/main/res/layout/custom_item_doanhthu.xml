@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin"
+    android:layout_marginTop="@dimen/margin"
+    android:layout_marginRight="@dimen/margin"
+    app:cardCornerRadius="@dimen/margin">
+
+    <LinearLayout
+        android:id="@+id/lnlTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tvDateDT"
+            style="@style/custom_TV_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/tvPlDT"
+            style="@style/custom_TV_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:gravity="center"
+            android:text="@string/phan_loai"
+            android:textSize="@dimen/text_medium" />
+
+        <TextView
+            android:id="@+id/tvDT"
+            style="@style/custom_TV_show"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.4"
+            android:gravity="center"
+            android:text="@string/doanh_thu"
+            android:textSize="@dimen/text_medium" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

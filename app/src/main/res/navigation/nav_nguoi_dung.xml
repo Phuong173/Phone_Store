@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_nguoi_dung"
+    app:startDestination="@id/nav_chiTietNguoiDung">
+
+    <fragment
+        android:id="@+id/nav_chiTietNguoiDung"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.NguoiDung.ChiTietNguoiDungFragment"
+        android:label="fragment_chi_tiet_nguoi_dung"
+        tools:layout="@layout/fragment_chi_tiet_nguoi_dung" >
+        <action
+            android:id="@+id/chiTietNguoiDung_to_doiMatKhau"
+            app:destination="@id/nav_doiMatKhau" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_doiMatKhau"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.NguoiDung.DoiMatKhauFragment"
+        android:label="fragment_doi_mat_khau"
+        tools:layout="@layout/fragment_doi_mat_khau" >
+        <action
+            android:id="@+id/doiMatKhau_to_chiTietNguoiDung"
+            app:destination="@id/nav_chiTietNguoiDung"
+            app:popUpTo="@id/nav_nguoi_dung" />
+    </fragment>
+</navigation>

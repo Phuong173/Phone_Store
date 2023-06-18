@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_chiTietNguoiDung"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_seach"
+    tools:context=".ui.NguoiDung.ChiTietNguoiDungFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgNguoiDung"
+        android:layout_width="@dimen/img_size"
+        android:layout_height="@dimen/img_size"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/image_defaut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgChonAnh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintBottom_toBottomOf="@+id/imgNguoiDung"
+        app:layout_constraintStart_toEndOf="@+id/imgNguoiDung" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_defaut"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgNguoiDung">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_thongtin"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/imgUpdateperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:src="@drawable/ic_edit_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            style="@style/custom_TV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding_defaut"
+            android:text="@string/name" />
+
+        <TextView
+            android:id="@+id/tvHoTenNguoiDung"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout14">
+
+        <TextView
+            style="@style/custom_TV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding_defaut"
+            android:text="@string/phone" />
+
+        <TextView
+            android:id="@+id/tvPhoneNguoiDung"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout16"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout15">
+
+        <TextView
+            style="@style/custom_TV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding_defaut"
+            android:text="@string/dia_chi" />
+
+        <TextView
+            android:id="@+id/tvDiacChiNguoiDung"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout17"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout16">
+
+        <TextView
+            style="@style/custom_TV"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:paddingLeft="@dimen/padding_defaut"
+            android:text="@string/date_year" />
+
+        <TextView
+            android:id="@+id/tvNamSinhNguoiDung"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/item_height"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChangePass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/bg_btn_rspass"
+        android:text="@string/pass_change"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_little"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

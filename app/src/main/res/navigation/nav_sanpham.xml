@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_sanpham"
+    app:startDestination="@id/nav_listSP">
+
+    <fragment
+        android:id="@+id/nav_listSP"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.SanPham.ListSanPhamFragment"
+        android:label="fragment_list_san_pham"
+        tools:layout="@layout/fragment_list_san_pham" >
+        <action
+            android:id="@+id/listSP_to_addSP"
+            app:destination="@id/nav_addSP" />
+        <action
+            android:id="@+id/listSP_to_chitetSP"
+            app:destination="@id/nav_chitetSP" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addSP"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.SanPham.AddSanPhamFragment"
+        android:label="fragment_add_san_pham"
+        tools:layout="@layout/fragment_add_san_pham" >
+        <action
+            android:id="@+id/addSP_to_listSP"
+            app:destination="@id/nav_listSP"
+            app:popUpTo="@id/nav_sanpham" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editSP"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.SanPham.EditSanPhamFragment"
+        android:label="fragment_edit_san_pham"
+        tools:layout="@layout/fragment_edit_san_pham" >
+        <action
+            android:id="@+id/editSP_to_chitetSP"
+            app:destination="@id/nav_chitetSP"
+            app:popUpTo="@id/nav_chitetSP" />
+        <action
+            android:id="@+id/editSP_to_listSP"
+            app:destination="@id/nav_listSP"
+            app:popUpTo="@id/nav_sanpham" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chitetSP"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.SanPham.ChiTietSanPhamFragment"
+        android:label="fragment_chi_tiet_san_pham"
+        tools:layout="@layout/fragment_chi_tiet_san_pham" >
+        <action
+            android:id="@+id/chitetSP_to_editSP"
+            app:destination="@id/nav_editSP" />
+        <action
+            android:id="@+id/chitetSP_to_listSP"
+            app:destination="@id/nav_listSP"
+            app:popUpTo="@id/nav_sanpham" />
+    </fragment>
+</navigation>

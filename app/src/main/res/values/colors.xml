@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FFC125</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="blue">#1E90FF</color>
+    <color name="selected">#801E90FF</color>
+    <color name="green">#00FF00</color>
+    <color name="bg_title">#42a5f5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg_sc_start">#654ea3</color>
+    <color name="bg_sc_end">#eaafc8</color>
+    <color name="bg_seach">#F2F2F2</color>
+    <color name="bg_btn_rspass">#019AE8</color>
+    <color name="btn_bg_start">#007991</color>
+    <color name="btn_bg_end">#78ffd6</color>
+    <color name="btn_cancel_start">#F2994A</color>
+    <color name="btn_cancel_end">#F2C94C</color>
+
+</resources>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_khachhang"
+    app:startDestination="@id/nav_listKH">
+    <fragment
+        android:id="@+id/nav_listKH"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.KhachHang.ListKhachHangFragment"
+        android:label="fragment_list_khach_hang"
+        tools:layout="@layout/fragment_list_khach_hang">
+        <action
+            android:id="@+id/action_listKH_to_addKH"
+            app:destination="@id/nav_addKH" />
+        <action
+            android:id="@+id/action_listKH_to_chitietKH"
+            app:destination="@id/nav_chitietKH" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addKH"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.KhachHang.AddKhachHangFragment"
+        android:label="Thêm Khách Hàng"
+        tools:layout="@layout/fragment_add_khach_hang">
+        <action
+            android:id="@+id/action_addKH_to_listKH"
+            app:destination="@id/nav_listKH"
+            app:popUpTo="@id/nav_khachhang" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chitietKH"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.KhachHang.ChiTietKhachHangFragment"
+        android:label="fragment_chi_tiet_khach_hang"
+        tools:layout="@layout/fragment_chi_tiet_khach_hang">
+        <action
+            android:id="@+id/action_chiteitkh_to_editkh"
+            app:destination="@id/nav_editKH" />
+        <action
+            android:id="@+id/action_chitietKH_to_listKH"
+            app:destination="@id/nav_listKH"
+            app:popUpTo="@id/nav_khachhang" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editKH"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.KhachHang.EditKhachHangFragment"
+        android:label="fragment_edit_khach_hang"
+        tools:layout="@layout/fragment_edit_khach_hang">
+        <action
+            android:id="@+id/action_editKH_to_listKH"
+            app:destination="@id/nav_listKH"
+            app:popUpTo="@id/nav_khachhang" />
+        <action
+            android:id="@+id/action_editKH_to_chitietKH"
+            app:destination="@id/nav_chitietKH"
+            app:popUpTo="@id/nav_khachhang" />
+    </fragment>
+</navigation>

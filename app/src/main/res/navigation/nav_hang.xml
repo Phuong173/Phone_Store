@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_hang"
+    app:startDestination="@id/nav_listHang">
+    <fragment
+        android:id="@+id/nav_listHang"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.Hang.ListHangFragment"
+        android:label="fragment_list_hang"
+        tools:layout="@layout/fragment_list_hang" >
+        <action
+            android:id="@+id/listHang_to_addHang"
+            app:destination="@id/nav_addHang" />
+        <action
+            android:id="@+id/listHang_to_chiTietHang"
+            app:destination="@id/nav_chiTietHang" />
+        app:destination="@id/nav_addHang" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addHang"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.Hang.AddHangFragment"
+        android:label="fragment_add_hang"
+        tools:layout="@layout/fragment_add_hang" >
+        <action
+            android:id="@+id/addHang_to_listHang"
+            app:destination="@id/nav_listHang"
+            app:popUpTo="@id/nav_hang"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_chiTietHang"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.Hang.ChiTietHangFragment"
+        android:label="fragment_chi_tiet_hang"
+        tools:layout="@layout/fragment_chi_tiet_hang" >
+        <action
+            android:id="@+id/chiTietHang_to_editHang"
+            app:destination="@id/nav_editHang" />
+        <action
+            android:id="@+id/chiTietHang_to_listHang"
+            app:destination="@id/nav_listHang"
+            app:popUpTo="@id/nav_hang"/>
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editHang"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.Hang.EditHangFragment"
+        android:label="fragment_edit_hang"
+        tools:layout="@layout/fragment_edit_hang" >
+        <action
+            android:id="@+id/editHang_to_listHang"
+            app:destination="@id/nav_listHang"
+            app:popUpTo="@id/nav_hang"/>
+        <action
+            android:id="@+id/editHang_to_chiTietHang"
+            app:destination="@id/nav_chiTietHang"
+            app:popUpTo="@id/nav_chiTietHang"/>
+    </fragment>
+</navigation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_tai_khoan"
+    app:startDestination="@id/nav_listTk">
+
+    <fragment
+        android:id="@+id/nav_listTk"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.TaiKhoan.ListTaiKhoanFragment"
+        android:label="fragment_list_tai_khoan"
+        tools:layout="@layout/fragment_list_tai_khoan" >
+        <action
+            android:id="@+id/listTk_to_add_Tk"
+            app:destination="@id/nav_addTk" />
+        <action
+            android:id="@+id/listTk_to_ChiTietTk"
+            app:destination="@id/nav_ChiTietTk" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addTk"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.TaiKhoan.AddTaiKhoanFragment"
+        android:label="fragment_add_tai_khoan"
+        tools:layout="@layout/fragment_add_tai_khoan" >
+        <action
+            android:id="@+id/addTk_to_listTk"
+            app:destination="@id/nav_listTk"
+            app:popUpTo="@id/nav_tai_khoan" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_ChiTietTk"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.TaiKhoan.ChiTietTaiKhoanFragment"
+        android:label="fragment_chi_tiet_tk"
+        tools:layout="@layout/fragment_chi_tiet_tk" >
+        <action
+            android:id="@+id/ChiTietTk_to_editTk"
+            app:destination="@id/nav_editTk" />
+        <action
+            android:id="@+id/ChiTietTk_to_ListTk"
+            app:destination="@id/nav_listTk"
+            app:popUpTo="@id/nav_tai_khoan" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editTk"
+        android:name="com.example.app_phone_store_manager_du_an_1.ui.TaiKhoan.EditTaiKhoanFragment"
+        android:label="fragment_edit_tk"
+        tools:layout="@layout/fragment_edit_tk" >
+        <action
+            android:id="@+id/editTk_to_ListTk"
+            app:destination="@id/nav_listTk" />
+        <action
+            android:id="@+id/editTk_to_ChiTietTk"
+            app:destination="@id/nav_ChiTietTk"
+            app:popUpTo="@id/nav_tai_khoan"/>
+    </fragment>
+</navigation>
